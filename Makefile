@@ -1,0 +1,2 @@
+servidor:
+	javac ServidorMain.java
