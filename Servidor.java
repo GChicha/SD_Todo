@@ -1,7 +1,8 @@
 import java.rmi.RemoteException;
+import java.util.List;
 
 public interface Servidor {
-	public void addTodo(Task task);
+	public void addTask(Task task);
 	public void doneTask(int id);
-	public list<Task> listTask();
+	public List<Task> listTask();
 }

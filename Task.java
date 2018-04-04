@@ -1,5 +1,5 @@
 public class Task {
-	public string description;
+	public String description;
 	public boolean done = false;
 
 	public Task(String desc) {
