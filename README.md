@@ -18,6 +18,8 @@ make
 
 ```bash
 java ClienteMain  ## For client
-java ServidorMain ## For Server
+## For Server
+rmiregistry 1099
+java ServidorMain
 java ClienteServidor ## For Client-Server
 ```
