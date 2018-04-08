@@ -14,10 +14,8 @@ public class ClienteMain {
 					for (int i = 1; i < args.length; i++) {
 						taskDesc += args[i];
 					}
-					System.out.println(taskDesc);
 
 					Task task = new Task(taskDesc);
-
 					s.addTask(task);
 				} else if (args[0].equals("do")) {
 					s.doneTask(Integer.parseInt(args[1]));
