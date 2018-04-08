@@ -6,13 +6,12 @@ public class ClienteMain {
 		try {
 			Servidor s = (Servidor) Naming.lookup("//localhost:1099/Todo");
 
-			if (args.length < 1) {
+			if (args.length < 1 || args[0].equals("list")) {
 				System.out.println(s.listTask());
 			} else if (args.length > 1){
 				if (args[0].equals("add")) {
 					String taskDesc = "";
 					for (int i = 1; i < args.length; i++) {
-						System.out.println(args[i]);
 						taskDesc += args[i];
 					}
 					System.out.println(taskDesc);

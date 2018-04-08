@@ -6,6 +6,7 @@ all:
 	${JAVAC} ServidorMain.java
 	${RMIC} ServidorImpl
 	${JAVAC} ClienteMain.java
+	${JAVAC} ClienteServidorMain.java
 
 clean:
 	rm *.class
