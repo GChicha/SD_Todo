@@ -2,7 +2,9 @@ import java.rmi.Naming;
 import java.rmi.RemoteException;
 import java.util.List;
 
-public class ServidorImpl extends java.rmi.server.UnicastRemoteObject implements Servidor {
+public class ServidorImpl
+	extends java.rmi.server.UnicastRemoteObject
+	implements Servidor {
 	private TaskController taskController = new TaskController(); 
 
 	public ServidorImpl() throws java.rmi.RemoteException {

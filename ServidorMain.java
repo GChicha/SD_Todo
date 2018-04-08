@@ -1,16 +1,14 @@
+import java.rmi.RemoteException;
 import java.rmi.Naming;
+import java.rmi.server.UnicastRemoteObject;
 
 public class ServidorMain {
-	public ServidorMain() {
+	public static void main(String[] args) {
 		try {
-			Servidor servidor = new ServidorImpl();
-			Naming.rebind("//127.0.0.1:6666/todo", servidor);
+			Naming.rebind("//localhost:1099/Todo", new ServidorImpl());
 		} catch (Exception e) {
 			System.out.println(e);	
+			System.exit(-1);
 		}
-	}
-
-	public static void main(String[] args) {
-		new ServidorMain();
 	}
 }
